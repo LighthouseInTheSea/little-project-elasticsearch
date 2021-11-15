@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+elasticsearch:
+  #节点信息
+  clusterNodes: localhost:9200
+  #建立连接超时时间
+  connectTimeoutMillis: 1000
+  #数据传输过程中的超时时间
+  socketTimeoutMillis: 30000
+  #从连接池获取连接的超时时间
+  connectionRequestTimeoutMillis: 500
+  #路由节点的最大连接数
+  maxConnPerRoute: 10
+  #client最大连接数
+  maxconnTotal: 30
